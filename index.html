@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body{
+            background: linear-gradient(90deg, #ff2c87, #ff0000);
+            background-size: 300% 300%;
+            animation: animation 3s infinite ease-in-out;
+        }
+        
+        @keyframes animation {
+            0%{
+                background-position: 0 50%;
+            }
+            50%{
+                background-position: 100% 50%;
+            }
+            100%{
+                background-position: 0 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class='container m-auto py-[50px] items-center flex justify-center'>
+        <label for="">
+            <div class="header1 w-[350px] py-[50px] flex flex-col justify-center items-center gap-2.5 ">
+                <h1>REGISTER</h1>
+                <div class="flex gap-2.5">
+                    <input class="w-[150px] bg-slate-200 rounded-2xl text-center" type="text"  name="First name" required placeholder="First name">
+                    <input class="w-[150px] bg-slate-200 rounded-2xl text-center" type="text" name="Last name" required placeholder="Last name">
+                </div>
+                <div> 
+                    <input class="w-[300px] bg-slate-200 rounded-2xl text-center" type="email" name="email" placeholder="email">
+                </div>
+                <div class="">
+                    <input class="w-[300px] bg-slate-200 rounded-2xl text-center" type="password" name="password" placeholder="password">
+                </div>
+                <div class="">
+                    <input class="w-[300px] bg-slate-200 rounded-2xl text-center" type="password" name="confirm password" placeholder="confirm password">
+                </div>
+                <div class="">
+                    <input type="checkbox"> I accept <a href="#" style="color:#0ea5e9;">Terms of use</a>
+                </div>
+                <div>
+                    <button class="w-[150px] bg-sky-500/100 rounded-2xl text-white">REGISTER NOW</button>
+                </div>
+            </div>
+        </label>
+    </div>
+</body>
+</html>
